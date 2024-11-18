@@ -47,7 +47,7 @@
     <div class="main">
         <!-- 搜索栏 -->
         <div class="search-view" style="margin-top:50px;">
-            <input type="text" class="text" value="" placeholder="搜索 商品名 类型" id="search-input">
+            <input type="text" name="keyword" class="text" value="" placeholder="搜索 商品名 类型" id="search-input">
             <button type="button" id="search-button" onclick="search()">搜 索</button>
         </div>
         <!-- 用户导航 -->
@@ -89,7 +89,7 @@
     function search() {
         var value = $('#search-input').val();
         if (value != null && value != '') {
-            window.location.href = 'searchGoods.jsp?condition=' + encodeURIComponent(value);
+            window.location.href = 'searchGoods?condition=' + encodeURIComponent(value);
         } else {
             layer.tips('请输入您要找的商品！', '#search-input');
         }

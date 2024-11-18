@@ -1,6 +1,7 @@
 package net.coffeexing.webmall.servlet;
 
 import net.coffeexing.webmall.entity.Goods;
+import net.coffeexing.webmall.service.GoodsService;
 import net.coffeexing.webmall.service.impl.GoodsServiceImpl;
 
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ import java.util.List;
 @WebServlet("/mainPage")
 public class GoodsListServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private GoodsServiceImpl goodsService = new GoodsServiceImpl();
+    private GoodsService goodsService = new GoodsServiceImpl();
 
     public GoodsListServlet() {
         super();
