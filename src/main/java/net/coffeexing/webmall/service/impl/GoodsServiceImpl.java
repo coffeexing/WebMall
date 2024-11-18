@@ -13,6 +13,7 @@ import net.coffeexing.webmall.service.GoodsService;
 import net.coffeexing.webmall.dao.BaseDao;
 
 public class GoodsServiceImpl implements GoodsService {
+
     /**
      * 商品详情接口
      */
@@ -59,16 +60,13 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public List<Goods> getGoodsList() {
         /********* Begin *********/
-        String USERNAME = "root";
-        String PASSWORD = "123123";
-        String URL = "jdbc:mysql://127.0.0.1:3306/online_shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true";
         Connection conn = null;
         PreparedStatement pste = null;
         ResultSet executeQuery = null;
         List<Goods> list = new ArrayList<Goods>();
         String sql = "select * from t_goods order by salesNum desc limit 4";
         try {
-            conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            conn = BaseDao.getConn();
             pste = conn.prepareStatement(sql);
             executeQuery = pste.executeQuery();
             while (executeQuery.next()) {

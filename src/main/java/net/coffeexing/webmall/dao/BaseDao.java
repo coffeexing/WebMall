@@ -79,11 +79,11 @@ public class BaseDao {
         }
     }
 
-    private static Connection getConn() {
+    public static Connection getConn() {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true", "admin", "123123");
+            conn = DriverManager.getConnection("jdbc:mysql://119.45.239.3:3306/online_shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true", "admin", "123456");
         } catch (Exception e) {
             e.printStackTrace();
         }

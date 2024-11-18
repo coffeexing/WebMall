@@ -17,11 +17,11 @@ body .iconfont{-webkit-text-stroke-width: 0;}
 /* 图标 */
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1477416582'); /* IE9*/
-  src: url('iconfont.eot?t=1477416582#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1477416582') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1477416582') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1477416582#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont1ef0.eot?t=1477416582'); /* IE9*/
+  src: url('iconfont1ef0.eot?t=1477416582#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont1ef0.woff?t=1477416582') format('woff'), /* chrome, firefox */
+  url('iconfont1ef0.ttf?t=1477416582') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont1ef0.svg?t=1477416582#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -86,7 +86,7 @@ pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid 
 
 .icon-touxiang{display:inline-block; color:#A9B7B7; font-size: 35px;}
 .fly-error{color:#c00;}
-.loading{background-image: url(../images/loading.gif); background-position: center center; background-repeat: no-repeat;}
+.loading{background-image: url(../images/loading.html); background-position: center center; background-repeat: no-repeat;}
 
 html .fly-full{margin-top: 65px;}
 
